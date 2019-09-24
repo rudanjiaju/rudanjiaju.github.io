@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>如丹家具 - 联系我们</title>
+  <link rel="stylesheet" href="./css/normalize.min.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <header>
+    <div class="banner background" style="background-image: url('https://dummyimage.com/1920x800/999/fff');">
+      <nav>
+        <div class="container nav-wrapper">
+          <div class="logo"><img class="img" src="https://dummyimage.com/430x160/666/fff" alt="logo"></div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="./index.html">首页</a></li>
+            <li class="nav-item"><a href="./prod.html">产品中心</a></li>
+            <li class="nav-item"><a href="./case.html">工程案例</a></li>
+            <li class="nav-item"><a href="./intro.html">公司简介</a></li>
+            <li class="nav-item active"><a href="./contact.html">联系我们</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container banner-warpper">
+        <div class="banner-tags">
+          <div class="banner-tag">酒店家具</div>
+          <div class="banner-tag">餐厅酒吧</div>
+          <div class="banner-tag">会所KTV</div>
+          <div class="banner-tag">个性定制</div>
+        </div>
+        <div class="banner-title">
+          <div class="zh">高端精品家具制造商</div>
+          <div class="en">HIGH-END FURNITURE MANUFACTURER</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="contact">
+      <div class="container">
+        <div class="home-title">
+          <div class="zh">地图导航</div>
+          <div class="en">MAP NAVIGATION</div>
+        </div>
+        <div id="amap"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-list">
+      <div class="container">
+        <div class="footer-item">联系电话：0757-28860419</div>
+        <div class="footer-item">财富热线：13928676327<span>总经理</span></div>
+        <div class="footer-item">公司商场地址：广东省佛山市乐从国际家具城皇朝A座中仓22号</div>
+        <div class="footer-item">工厂地址：广东省佛山市顺德区龙江镇涌口工业区富华路10号</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">版权所有：如丹家具定制有限公司（虹川家具厂）</div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.11&key=1d05c71455917cd79141e4e6218d7fb7&plugin=AMap.Geocoder"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var map = new AMap.Map('amap', {
+        zoom: 11,
+        center: [113.058027, 22.895400]
+      })
+      var marker = new AMap.Marker()
+      map.add(marker)
+    })
+  </script>
+</body>
+</html>
