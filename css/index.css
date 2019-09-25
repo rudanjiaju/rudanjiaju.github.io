@@ -9,6 +9,7 @@
   html {
     color: #303133;
     font-size: 14px;
+    min-width: 1240px;
   }
   a {
     text-decoration: none;
